@@ -1,0 +1,20 @@
+
+
+.lista-item {
+    border-bottom: 1px solid #cacaca;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $secondary-color;
+        margin: 5px 0;
+    }
+}
