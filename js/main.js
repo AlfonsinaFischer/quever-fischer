@@ -38,8 +38,8 @@ function mostrarPeliculas() {
             div.classList.add("lista-item");
             div.innerHTML = `
                 <h3>${pelicula.titulo}</h3>
-                ${pelicula.genero ? `<p>Género: ${pelicula.genero}</p>` : ''} <!-- Solo muestra el género si existe -->
-                ${pelicula.puntaje ? `<p>Puntaje: ${pelicula.puntaje}</p>` : ''} <!-- Solo muestra el puntaje si existe -->
+                ${pelicula.genero ? `<p>Género: ${pelicula.genero}</p>` : ''} 
+                ${pelicula.puntaje ? `<p>Puntaje: ${pelicula.puntaje}</p>` : ''} 
             `;
 
             let buttonEliminar = document.createElement("button");
