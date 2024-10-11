@@ -1,33 +1,11 @@
 body {
-    font-family: $font-body;  
-    color: $primary-color;
+    font-family: $font-body;
+    background-color: $background-color;
+    color: $text-color-light; 
     line-height: 1.6;
 }
 
 h1, h2, h4 {
-    font-family: $font-title;  
-    color: $primary-color;
-}
-
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 40px;
-    letter-spacing: 2px;
-    font-weight: $rajdhani-bold;  
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    font-weight: $rajdhani-medium;  
-}
-
-h4 {
-    font-size: 1.2rem;
-    color: $secondary-color;
-    text-align: center;
-    font-weight: $rajdhani-light;  
+    font-family: $font-title;
+    color: $text-color-light; 
 }

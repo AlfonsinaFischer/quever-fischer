@@ -1,20 +1,25 @@
-
+.container {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 20px;
+}
 
 .lista-item {
+    width: 100%; 
     border-bottom: 1px solid #cacaca;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
+    background-color: $secondary-color; 
+    color: $text-color-light; 
+}
 
-    h3 {
-        font-size: 1.5rem;
-        color: $primary-color;
-    }
+.content { 
+    width: 65%; 
+    color: $text-color-light;
+}
 
-    p {
-        font-size: 1rem;
-        color: $secondary-color;
-        margin: 5px 0;
-    }
+.dark-alert {
+    background-color: #343a40; 
+    color: #ffffff; 
 }

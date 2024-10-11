@@ -1,9 +1,9 @@
 .footer {
-    background-color: $primary-color;
-    padding: 10px 0;
-    
+    background-color: $secondary-color;
+    padding: 20px 0;
+
     p {
         text-align: center;
-        color: white;
+        color: $text-color-light; 
     }
 }

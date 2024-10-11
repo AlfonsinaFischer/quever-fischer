@@ -1,11 +1,22 @@
 .header {
-    background-color: $secondary-color;
+    background: linear-gradient(135deg, #8b0000, #1b0303); 
     padding: 50px 0;
-    
+
     h1 {
-        color: rgb(255, 255, 255);
-        text-transform: uppercase; 
-        font-weight: 700;          
-        line-height: 1.2;     
+        color: $text-color-light; 
+        text-transform: uppercase;
+        font-weight: $rajdhani-bold;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+.descripcion {
+    margin: 20px 0; 
+    
+    .container {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px; 
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 }

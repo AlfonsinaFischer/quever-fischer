@@ -3,13 +3,49 @@
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.red-button {
+    background-color: #ca0014; 
+    color: #ffffff;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.red-button:hover {
+    background-color: #8b000e; 
+}
+
+.boton-al-azar {
+    background-color: #ca0014; 
+    color: white; 
+    
+    &:hover {
+        background-color: #8b000e;
+        color: white;
+    }
+}
+
+.btn-red {
+    background-color: #ca0014; 
+    border: none; 
+    color: white;
+    
+    &:hover {
+        background-color: #8b000e;
+    }
 }
 
 .btn-danger {
     background-color: #dc3545;
     color: white;
-    border: none;
 
     &:hover {
         background-color: #c82333;

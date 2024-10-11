@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿QUÉ VER?</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <meta name="description" content="Descubre y organiza tus películas favoritas con nuestra plataforma. Encuentra reseñas, puntuaciones y selecciona películas al azar para disfrutar en tu próximo maratón de cine. ¡Explora ahora!">
+    <meta name="keywords" content="películas, cine, reseñas, puntuaciones, películas al azar, organizar películas">
+    <meta name="author" content="QUE VER- María Fischer.">
 </head>
 
 <body>
@@ -17,31 +22,36 @@
         </div>
     </header>
 
+    <section class="descripcion">
+        <div class="container bg-dark p-4 rounded">
+            <p class="text-center text-light mb-0">Una sistema que te ayuda a organizarte al decidir qué película ver, ya sea que estes solo o con amigos. Seleciona una película, puntúa y especifica su genero, puedes elegir la que mejor puntaje tenga o seleccionar una al azar, ¡luego solo disfrutala!</p>
+        </div>
+    </section>
+
     <main class="main">
         <section class="container my-5">
             <h2 class="title">Agrega una película</h2>
 
-
             <form id="agregar-pelicula-form" class="row g-3">
-                <div class="col-md-4">
+                <div class="col-md-4 col-12"> 
                     <label for="titulo-pelicula" class="form-label">Título:</label>
                     <input type="text" id="titulo-pelicula" class="form-control" placeholder="Título de la película" required>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12"> 
                     <label for="genero-pelicula" class="form-label">Género:</label>
                     <input type="text" id="genero-pelicula" class="form-control" placeholder="Género de la película" required>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12"> 
                     <label for="puntaje-pelicula" class="form-label">Puntaje:</label>
                     <input type="number" id="puntaje-pelicula" class="form-control" placeholder="Puntaje (0-10)" min="0" max="10" required>
                 </div>
 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Agregar Película</button>
+                    <button type="submit" class="btn btn-primary btn-red">Agregar Película</button>
                 </div>
             </form>
+            <div id="mensaje-error" class="d-none"></div>
         </section>
-
 
         <section class="container my-5">
             <h2 class="title">Tu lista de películas</h2>
@@ -57,6 +67,8 @@
                 <div class="lista-total mt-4">
                     <h2>Total de Películas: <span id="carrito-total">0</span></h2>
                 </div>
+                
+
             </div>
         </section>
     </main>
@@ -66,7 +78,8 @@
             <p>Todos los derechos reservados ©</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
 </body>
 
